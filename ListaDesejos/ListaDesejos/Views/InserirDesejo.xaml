@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaDesejos.Views.InserirDesejo"
+             Title="Faça seu desejo!">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="Aquamarine">
+            <StackLayout Padding="35">
+                <Label Text="NOME DO DESEJO :" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center">
+                </Label>
+                <Entry> </Entry>
+                
+                <Label Text="CODIGO:" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+                <Entry></Entry>
+                <Label Text="LOJA:" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+                <Entry></Entry>
+                <Label Text="CATEGORIA:" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+                <Entry></Entry>
+                <Label Text="PREÇO MINIMO:" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+                <Entry></Entry>
+                <Label Text="PRECO MAXIMO:" 
+                   FontSize="Small"
+                   TextColor="Blue"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+               
+                <Entry></Entry>
+                    <Button Text="SALVAR DESEJO"  Clicked="SalvarDesejo"></Button> 
+            </StackLayout>
+            
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

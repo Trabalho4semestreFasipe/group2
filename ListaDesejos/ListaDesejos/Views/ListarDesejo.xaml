@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaDesejos.ListarDesejo"
+             Title="Funções">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Clicked="InserirDesejo" Text="INSERIR DESEJOS"/>
+            <Button Clicked="DetalhesDesejo" Text="DETALHES DESEJOS"/>
+            <Button Clicked="AlterarDesejos" Text="ALTERAR DESEJOS"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,1 @@
+C:\Users\rodri\source\repos\ListaDesejos\ListaDesejos\ListaDesejos.UWP\ListaDesejos.UWP.csproj;x86
