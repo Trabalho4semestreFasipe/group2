@@ -11,8 +11,8 @@ namespace ListaDesejos.Views
         public MasterDetail()
         {
             this.Master = new ListarDesejo();
-            this.Detail = new Navigation(new Principal());
-            App.MasterDetail = this;
+            this.Detail = new NavigationPage(new Principal());
+            App.MasterPage = this;
 
         }
     }

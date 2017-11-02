@@ -4,53 +4,40 @@
              x:Class="ListaDesejos.Views.InserirDesejo"
              Title="Faça seu desejo!">
     <ContentPage.Content>
-        <ScrollView>
-        <StackLayout BackgroundColor="Aquamarine">
-            <StackLayout Padding="35">
-                <Label Text="NOME DO DESEJO :" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center">
-                </Label>
-                <Entry> </Entry>
-                
-                <Label Text="CODIGO:" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-                <Entry></Entry>
-                <Label Text="LOJA:" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-                <Entry></Entry>
-                <Label Text="CATEGORIA:" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-                <Entry></Entry>
-                <Label Text="PREÇO MINIMO:" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-                <Entry></Entry>
-                <Label Text="PRECO MAXIMO:" 
-                   FontSize="Small"
-                   TextColor="Blue"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-               
-                <Entry></Entry>
-                    <Button Text="SALVAR DESEJO"  Clicked="SalvarDesejo"></Button> 
+        
+        <StackLayout Padding="10">
+                <StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Descrição" Text="{Binding Desejo.Descricao}"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Categoria" Text="{Binding Desejo.Categoria}"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Loja" Text="{Binding Desejo.Loja}"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Valor" Text="{Binding Desejo.Valor}" Keyboard="Numeric"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Valor Minimo" Text="{Binding Desejo.ValorMinimo}" Keyboard="Numeric"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry Placeholder="Valor Máximo" Text="{Binding Desejo.ValorMaximo}" Keyboard="Numeric"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                    <Button Text="Salvar Desejo"   Command="{Binding ButtonCommand}" Style="{StaticResource buttonMenu}"/>
+                    </StackLayout>
+
+                </StackLayout>
+
             </StackLayout>
-            
-            
-        </StackLayout>
-        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

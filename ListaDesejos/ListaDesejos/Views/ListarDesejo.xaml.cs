@@ -25,9 +25,5 @@ namespace ListaDesejos
         {
             await App.NavigateMaster(new DetalhesdoDesejo());
         }
-        protected async void AlterarDesejos(object obj, EventArgs send)
-        {
-            await App.NavigateMaster(new AlterarDesejo());
-        }
     }
 }

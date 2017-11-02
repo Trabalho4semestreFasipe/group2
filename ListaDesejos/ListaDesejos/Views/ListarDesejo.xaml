@@ -5,10 +5,19 @@
              Title="Funções">
     <ContentPage.Content>
         <StackLayout>
-            <Button Clicked="InserirDesejo" Text="INSERIR DESEJOS"/>
-            <Button Clicked="DetalhesDesejo" Text="DETALHES DESEJOS"/>
-            <Button Clicked="AlterarDesejos" Text="ALTERAR DESEJOS"/>
+            <StackLayout HeightRequest="150"
+                        BackgroundColor="{StaticResource azulTopo}">
 
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="Lista de Desejo" TextColor="{StaticResource labelTopo}" FontSize="22"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout>
+                <Button Clicked="InserirDesejo" Text="INSERIR DESEJOS" Style="{StaticResource buttonMenu}"/>
+                <Button Clicked="DetalhesDesejo" Text="DETALHES DESEJOS" Style="{StaticResource buttonMenu}"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,8 +4,39 @@
              x:Class="ListaDesejos.Views.AlterarDesejo"
              Title="ALTERE SUA LISTA DE DESEJOS">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
-            <Label Text="Welcome to Xamarin Forms!" TextColor="White"/>
+        <StackLayout Padding="10">
+            <StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Descrição" Text="{Binding Desejo.Descricao}"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Categoria" Text="{Binding Desejo.Categoria}"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Loja" Text="{Binding Desejo.Loja}"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Valor" Text="{Binding Desejo.Valor}" Keyboard="Numeric"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Valor Minimo" Text="{Binding Desejo.ValorMinimo}" Keyboard="Numeric"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Valor Máximo" Text="{Binding Desejo.ValorMaximo}" Keyboard="Numeric"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Salvar Desejo"   Command="{Binding ButtonCommand}" Style="{StaticResource buttonMenu}"/>
+                </StackLayout>
+
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

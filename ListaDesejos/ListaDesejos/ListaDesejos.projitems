@@ -12,6 +12,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IShare.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Conexao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DesejoViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AlterarDesejo.xaml.cs">
       <DependentUpon>AlterarDesejo.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -30,7 +34,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Desejo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\MasterDetail.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Navigation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
       <SubType>Code</SubType>

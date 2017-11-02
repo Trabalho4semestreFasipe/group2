@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-//using System.Void;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -11,15 +10,15 @@ namespace ListaDesejos
 {
 	public partial class App : Application
 	{
-        public static MasterDetailPage MasterDetail { get; set; }
-        public async static Task NavigateMaster (Page page)
+        public static MasterDetailPage MasterPage { get; set; }
+        public static async Task NavigateMaster (Page page)
         {
-            App.MasterDetail.IsPresented = false;
-            await App.MasterDetail.Detail.Navigation.PushAsync(page);
+            App.MasterPage.IsPresented = false;
+            await App.MasterPage.Detail.Navigation.PushAsync(page);
         }
         public App ()
 		{
-            //InitializeComponent();
+            InitializeComponent();
 
             MainPage = new MasterDetail();
 		}

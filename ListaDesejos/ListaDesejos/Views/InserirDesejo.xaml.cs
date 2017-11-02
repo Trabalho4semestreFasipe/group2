@@ -1,9 +1,8 @@
 ﻿using System;
+using ListaDesejos;
+using ListaDesejos.Models;
+using ListaDesejos.ViewModel;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,10 +14,23 @@ namespace ListaDesejos.Views
 		public InserirDesejo ()
 		{
 			InitializeComponent ();
-		}
-        public void SalvarDesejo(object sender,EventArgs e)
-        {
-            DisplayAlert("Desejo cadastrado com sucesso","...","OK!!!");
+            DesejoViewModel desejoViewModel = new DesejoViewModel();
+            this.BindingContext = desejoViewModel;
+            //this.listInserirDesejo.ItemSelected += async (sender, e) =>
+            //{
+            //    var message = await DisplayAlert("Message", "Qual operação deseja Realizar", "Excluir", "Editar");
+            //    if (message)
+            //    {
+            //        desejoViewModel.Excluir(e.SelectedItem as Model.Desejo);
+            //        desejoViewModel.IniciaDados();
+            //        desejoViewModel.Contas = desejoViewModel.Desejos;
+            //    }
+            //    else
+            //    {
+            //        desjoViewModel.Desejo = e.SelectedItem as Model.Desejo;
+            //    }
+            //};
         }
+ 
     }
 }
