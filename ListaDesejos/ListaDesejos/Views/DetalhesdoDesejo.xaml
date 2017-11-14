@@ -19,53 +19,51 @@
                                 <ViewCell.View>
 
                                     <StackLayout Padding="0,5,0,5">
-                                        
-                                            <StackLayout Padding="3" BackgroundColor="#efefef">
 
-                                                <Grid>
-                                                    <StackLayout Grid.Row="0" Grid.Column="0">
-                                                        <Label Text="Descrição"/>
-                                                        <Label Text="{Binding Descricao}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                        <StackLayout Padding="3" BackgroundColor="#efefef">
 
-                                                    <StackLayout Grid.Row="0" Grid.Column="1">
-                                                        <Label Text="Loja"/>
-                                                        <Label Text="{Binding Loja}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                            <Grid>
+                                                <StackLayout Grid.Row="0" Grid.Column="0">
+                                                    <Label Text="Descrição"/>
+                                                    <Label Text="{Binding Descricao}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
 
-                                                    <StackLayout Grid.Row="1" Grid.Column="0">
-                                                        <Label Text="Categoria"/>
-                                                        <Label Text="{Binding Categoria}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                                    <Label Text="Loja"/>
+                                                    <Label Text="{Binding Loja}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
 
-                                                    <StackLayout Grid.Row="1" Grid.Column="1">
-                                                        <Label Text="Valor"/>
-                                                        <Label Text="{Binding Valor}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                                <StackLayout Grid.Row="1" Grid.Column="0">
+                                                    <Label Text="Categoria"/>
+                                                    <Label Text="{Binding Categoria}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
 
-                                                    <StackLayout Grid.Row="2" Grid.Column="0">
-                                                        <Label Text="Valor Minimo"/>
-                                                        <Label Text="{Binding ValorMinimo}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                                <StackLayout Grid.Row="1" Grid.Column="1">
+                                                    <Label Text="Valor"/>
+                                                    <Label Text="{Binding Valor}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
 
-                                                    <StackLayout Grid.Row="2" Grid.Column="1">
-                                                        <Label Text="Valor Máximo"/>
-                                                        <Label Text="{Binding ValorMaximo}" Style="{StaticResource labelList}" />
-                                                    </StackLayout>
+                                                <StackLayout Grid.Row="2" Grid.Column="0">
+                                                    <Label Text="Valor Minimo"/>
+                                                    <Label Text="{Binding ValorMinimo}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
 
-                                                </Grid>
-                                                
-                                            </StackLayout>
-                                        
+                                                <StackLayout Grid.Row="2" Grid.Column="1">
+                                                    <Label Text="Valor Máximo"/>
+                                                    <Label Text="{Binding ValorMaximo}" Style="{StaticResource labelList}" />
+                                                </StackLayout>
+
+                                            </Grid>
+                                        </StackLayout>
+
                                     </StackLayout>
-                                    
+
                                 </ViewCell.View>
                             </ViewCell>
                         </DataTemplate>
-                        
                     </ListView.ItemTemplate>
                 </ListView>
-                
+
             </StackLayout>
         </StackLayout>
        

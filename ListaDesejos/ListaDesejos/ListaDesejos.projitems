@@ -34,6 +34,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Desejo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\MasterDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ML.xaml.cs">
+      <DependentUpon>ML.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -71,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AlterarDesejo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ML.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

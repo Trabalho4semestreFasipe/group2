@@ -21,11 +21,13 @@ namespace ListaDesejos.ViewModel
         public Desejo _desejo { get; set; }
         public Desejo Desejo { get { return _desejo; } set { _desejo = value; OnPropertyChanged(); } }
         public Command ButtonCommand { get; set; }
+        public Command MLCommand { get; set; }
 
         public DesejoViewModel()
         {
             _conexao = new Conexao();
             IniciaDados();
+            MLCommand = new Command(ML);
             ButtonCommand = new Command(ExecuteButton, CanExecuteButton);
             Share = new Command(ShareCommand);
         }
@@ -78,6 +80,14 @@ namespace ListaDesejos.ViewModel
         private bool CanExecuteButton()
         {
             return true;
+        }
+
+        public void ML()
+        {
+            var browser = new WebView
+            {
+                Source = "https://lista.mercadolivre.com.br/"
+            };
         }
 
 

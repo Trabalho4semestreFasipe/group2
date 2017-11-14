@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite.Net.Attributes;
+using Xamarin.Forms;
 
 namespace ListaDesejos.Models
 {
@@ -16,5 +17,9 @@ namespace ListaDesejos.Models
         public double ValorMaximo { get; set; }
         public double Valor { get; set; }
 
+        
+
     }
+    
+
 }

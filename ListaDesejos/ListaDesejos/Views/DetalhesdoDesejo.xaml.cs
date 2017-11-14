@@ -10,6 +10,7 @@ namespace ListaDesejos.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DetalhesdoDesejo : ContentPage
 	{
+        public bool Mlatv { get; set; }
 		public DetalhesdoDesejo ()
 		{
 			InitializeComponent ();
@@ -17,20 +18,34 @@ namespace ListaDesejos.Views
             this.BindingContext = desejoViewModel;
             this.listDesejos.ItemTapped += async (sender, e) =>
             {
-                var message = await DisplayAlert("Message", "Qual operação deseja Realizar", "Excluir", "Editar");
-                if (message)
+                var message = await DisplayActionSheet("Qual operação deseja Realizar","Editar", "Excluir", "Buscar ML" );
+                await DisplayAlert("teste", message, "ok");
+                if (message=="Excluir")
                 {
-                   desejoViewModel.Excluir(e.Item as Models.Desejo);
-                   desejoViewModel.IniciaDados();
-                   desejoViewModel.Desejos = desejoViewModel.Desejos;
+                    desejoViewModel.Excluir(e.Item as Models.Desejo);
+                    desejoViewModel.IniciaDados();
+                    desejoViewModel.Desejos = desejoViewModel.Desejos;
                 }
-                else
+                if (message == "Buscar ML")
+                {
+                    await App.NavigateMaster(new ML(e.Item as Models.Desejo));
+                }
+                if (message == "Editar")
                 {
                     desejoViewModel.Desejo = e.Item as Models.Desejo;
                     await App.NavigateMaster(new AlterarDesejo(desejoViewModel));
                 }
             };
-           
         }
+        //public void MercadoLivre(object obj, EventArgs send)
+        //{
+        //    this.listDesejos.ItemSelected += async (sender, e) =>
+        //    {
+           
+                    
+                
+        //    };
+        //}
+
     }
 }
