@@ -18,8 +18,9 @@ namespace ListaDesejos.Droid
 			ToolbarResource = Resource.Layout.Toolbar; 
 
 			base.OnCreate (bundle);
+            System.Threading.Thread.Sleep(1000);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
+            global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ListaDesejos.App ());
 		}
 	}

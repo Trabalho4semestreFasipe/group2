@@ -19,7 +19,7 @@ namespace ListaDesejos.Views
             this.listDesejos.ItemTapped += async (sender, e) =>
             {
                 var message = await DisplayActionSheet("Qual operação deseja Realizar","Editar", "Excluir", "Buscar ML" );
-                await DisplayAlert("teste", message, "ok");
+               // await DisplayAlert("teste", message, "ok");
                 if (message=="Excluir")
                 {
                     desejoViewModel.Excluir(e.Item as Models.Desejo);

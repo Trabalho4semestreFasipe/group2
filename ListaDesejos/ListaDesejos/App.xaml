@@ -4,7 +4,7 @@
              x:Class="ListaDesejos.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="azulTopo">#2196f3</Color>
+            <Color x:Key="azulTopo">#269846</Color>
             <Color x:Key="labelTopo">White</Color>
 
             <Style x:Key="buttonMenu" TargetType="Button">
@@ -22,7 +22,6 @@
                 <Setter Property="FontSize" Value="18"/>
                 <Setter Property="VerticalTextAlignment" Value="Start"/>
             </Style>
-
             <Style x:Key="labelList" TargetType="Label">
                 <Setter Property="TextColor" Value="#cccccc"/>
                 <Setter Property="FontSize" Value="11"/>

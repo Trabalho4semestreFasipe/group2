@@ -61,7 +61,17 @@ namespace ListaDesejos.ViewModel
 
         private void ExecuteButton()
         {
-            if (Desejo.Id >= 1)
+            if ((String.IsNullOrEmpty(Desejo.Categoria)) && (String.IsNullOrEmpty(Desejo.Descricao)))
+            {
+                App.Current.MainPage.DisplayAlert("Erro", "Coloque uma categoria e uma descrição", "OK");
+                return;
+            }
+            if ((String.IsNullOrEmpty((Desejo.Loja)) && (Desejo.Valor==0)) || ((Desejo.ValorMaximo==0) || (Desejo.ValorMinimo==0)))
+            {
+                App.Current.MainPage.DisplayAlert("Erro", "Coloque o nome da Loja e todos os valores", "OK");
+                return;
+            }
+                if (Desejo.Id >= 1)
             {
                 _conexao.Update(Desejo);
                 IniciaDados();

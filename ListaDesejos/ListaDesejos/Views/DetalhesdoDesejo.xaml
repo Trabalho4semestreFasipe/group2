@@ -20,7 +20,7 @@
 
                                     <StackLayout Padding="0,5,0,5">
 
-                                        <StackLayout Padding="3" BackgroundColor="#efefef">
+                                        <StackLayout Padding="3" BackgroundColor="#269846">
 
                                             <Grid>
                                                 <StackLayout Grid.Row="0" Grid.Column="0">
