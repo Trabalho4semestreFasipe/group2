@@ -13,17 +13,27 @@ namespace ListaDesejos.Views
 		public Principal ()
 		{
             InitializeComponent();
-            DesejoViewModel desejoViewModel = new DesejoViewModel();
-            this.BindingContext = desejoViewModel;
+            Device.StartTimer(TimeSpan.FromSeconds(3), () =>
+            {
+                IniciaDados();
+                return true;
+            });
             this.listDesejos.ItemTapped += async (sender, e) =>
             {
                 var message = await DisplayAlert("Message", "Deseja Exibir mais detalhes do desejo ", "Sim", "Não");
-                if (message==true)
+                if (message == true)
                 {
                     await App.NavigateMaster(new DetalhesdoDesejo());
                 }
-             
+
             };
+
+
+        }
+        public void IniciaDados()
+        {
+            DesejoViewModel desejoViewModel = new DesejoViewModel();
+            this.BindingContext = desejoViewModel;
         }
 	}
 }

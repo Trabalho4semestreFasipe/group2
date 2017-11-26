@@ -30,6 +30,7 @@ namespace ListaDesejos.ViewModel
             MLCommand = new Command(ML);
             ButtonCommand = new Command(ExecuteButton, CanExecuteButton);
             Share = new Command(ShareCommand);
+           
         }
 
         void ShareCommand()

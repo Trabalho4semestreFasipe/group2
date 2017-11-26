@@ -37,15 +37,5 @@ namespace ListaDesejos.Views
                 }
             };
         }
-        //public void MercadoLivre(object obj, EventArgs send)
-        //{
-        //    this.listDesejos.ItemSelected += async (sender, e) =>
-        //    {
-           
-                    
-                
-        //    };
-        //}
-
     }
 }
